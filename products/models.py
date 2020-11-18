@@ -2,11 +2,10 @@ from django.db import models
 from django.http import Http404
 
 class Seller(models.Model):
-    seller_id = models.IntegerField()
     name = models.CharField(max_length=200)
     
-    def __int__(self):
-        return self.seller_id
+    def __str__(self):
+        return self.name
 
 status_product = [
     ("A", "Active"),
@@ -15,7 +14,7 @@ status_product = [
 
 class Product(models.Model):
     
-    product_id = models.IntegerField()
+    code = models.IntegerField()
     name = models.CharField(max_length=200)
     price = models.FloatField()
     stock_quantity = models.IntegerField()
@@ -26,7 +25,7 @@ class Product(models.Model):
     def to_dict(self):
         return {
             "id": self.id,
-            "product_id": self.product_id,
+            "code": self.code,
             "name": self.name,
             "price": self.price,
             "stock_quantity": self.stock_quantity,
