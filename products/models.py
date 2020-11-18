@@ -14,7 +14,7 @@ status_product = [
 
 class Product(models.Model):
     
-    product_id = models.IntegerField()
+    code = models.IntegerField()
     name = models.CharField(max_length=200)
     price = models.FloatField()
     stock_quantity = models.IntegerField()
@@ -25,7 +25,7 @@ class Product(models.Model):
     def to_dict(self):
         return {
             "id": self.id,
-            "product_id": self.product_id,
+            "code": self.code,
             "name": self.name,
             "price": self.price,
             "stock_quantity": self.stock_quantity,
