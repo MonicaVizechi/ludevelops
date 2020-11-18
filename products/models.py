@@ -2,11 +2,10 @@ from django.db import models
 from django.http import Http404
 
 class Seller(models.Model):
-    seller_id = models.IntegerField()
     name = models.CharField(max_length=200)
     
-    def __int__(self):
-        return self.seller_id
+    def __str__(self):
+        return self.name
 
 status_product = [
     ("A", "Active"),
