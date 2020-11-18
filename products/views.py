@@ -10,7 +10,7 @@ class ProductViewSet(generics.ListCreateAPIView):
     serializer_class = ProductSerializer
 
 
-class ProductDetailViewSet(generics.RetrieveUpdateDestroyAPIView):
+class ProductDetailViewSet(generics.RetrieveUpdateAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
 

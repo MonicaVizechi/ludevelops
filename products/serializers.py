@@ -4,10 +4,10 @@ from .models import Product, Seller
 class SellerSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Seller
-        fields = ['seller_id', 'name']
+        fields = ['id','name','url']
 
 
 class ProductSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Product
-        fields = ['product_id', 'name', 'price', 'stock_quantity', 'status', 'seller']
+        fields = ['id','code', 'name', 'price', 'stock_quantity', 'status', 'seller']
