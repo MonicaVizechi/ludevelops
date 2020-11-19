@@ -12,6 +12,7 @@ class Product(models.Model):
         ("A", "Active"),
         ("I", "Inactive"),
     ]
+
     
     code = models.IntegerField()
     name = models.CharField(max_length=200)
