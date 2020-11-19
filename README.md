@@ -1,4 +1,4 @@
 # titulo
 
-![GitHub Logo](C:\Usuários\Mônica\Área de Trabalho\download.png)
+![Image of Yaktocat]
 Format: ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
