@@ -6,7 +6,6 @@ class SellerSerializer(serializers.HyperlinkedModelSerializer):
         model = Seller
         fields = ['id','name','url']
 
-
 class ProductSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Product

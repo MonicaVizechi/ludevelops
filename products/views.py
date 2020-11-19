@@ -9,16 +9,13 @@ class ProductViewSet(generics.ListCreateAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
 
-
 class ProductDetailViewSet(generics.RetrieveUpdateAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
 
-
 class SellerViewSet(generics.ListCreateAPIView):
     queryset = Seller.objects.all()
     serializer_class = SellerSerializer
-
 
 class SellerDetailViewSet(generics.RetrieveUpdateDestroyAPIView):
     queryset = Seller.objects.all()

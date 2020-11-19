@@ -1,7 +1,6 @@
 from django.db import models
 from django.http import Http404
 
-
 class Seller(models.Model):
     name = models.CharField(max_length=200)
     
