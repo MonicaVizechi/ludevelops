@@ -20,7 +20,6 @@ class Product(models.Model):
     status = models.CharField(max_length=1, choices=status_product)
     seller = models.ForeignKey(Seller, null=True, on_delete=models.SET_NULL)
 
-
     def to_dict(self):
         return {
             "id": self.id,
