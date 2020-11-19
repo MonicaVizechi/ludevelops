@@ -7,12 +7,12 @@ class Seller(models.Model):
     def __str__(self):
         return self.name
 
-status_product = [
-    ("A", "Active"),
-    ("I", "Inactive"),
-]
-
 class Product(models.Model):
+    status_product = [
+        ("A", "Active"),
+        ("I", "Inactive"),
+    ]
+    
     code = models.IntegerField()
     name = models.CharField(max_length=200)
     price = models.FloatField()
