@@ -16,7 +16,6 @@
 | `POST/` | /products  | Insere um produto específico.|
 | `GET/`   | /products/{id}  | Recupera um produto específico.|
 | `PUT/` | /products/{id}  | Atualiza um produto específico.|
-
 | `GET/` | /products/sellers  | Recupera todos os vendedores cadastrados.|
 | `POST/` | /products/sellers  | Insere um vendedor específico.|
 | `GET/` | /products/sellers{id}  | Recupera um vendedor específico.|
