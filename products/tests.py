@@ -1,4 +1,5 @@
 from django.test import TestCase
+from .models import Seller
 from rest_framework.test import APIClient
 import json
 

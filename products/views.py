@@ -9,9 +9,15 @@ class ProductViewSet(generics.ListCreateAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
 
-class ProductDetailViewSet(generics.RetrieveUpdateAPIView):
+class ProductDetailViewSet(generics.RetrieveUpdateDestroyAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
+
+    def delete(self, request, pk):
+        product = self.get_object()
+        product.status = "I"
+        product.save()
+        return Response(status=status.HTTP_200_OK)
 
 class SellerViewSet(generics.ListCreateAPIView):
     queryset = Seller.objects.all()
