@@ -6,17 +6,18 @@ class Seller(models.Model):
     
     def __str__(self):
         return self.name
+
+STATUS_PRODUCT = [
+    ("A","Active"),
+    ("I","Inactive"),
+]        
         
 class Product(models.Model):
-    status_product = [
-        ("A","Active"),
-        ("I","Inactive"),
-    ]
     code = models.IntegerField()
     name = models.CharField(max_length=200)
     price = models.FloatField()
     stock_quantity = models.IntegerField()
-    status = models.CharField(max_length=1, choices=status_product)
+    status = models.CharField(max_length=1, choices=STATUS_PRODUCT)
     seller = models.ForeignKey(Seller, null=True, on_delete=models.SET_NULL)
 
     def to_dict(self):

@@ -9,3 +9,14 @@
 #### O objetivo do projeto #LuDevelops é criar uma solução aberta para outros vendedores colocarem seus produtos a venda na plataforma MagazineLuiza.
 
 
+## API Ludevelops
+| Operação | URL´s  | Descrição
+| ------------- | ------------------------------ | ------------------------------ |
+|  `GET/`  | /products/ | Recupera todos os produtos cadastrados.|
+| `POST/` | /products  | Insere um produto específico.|
+| `GET/`   | /products/{id}  | Recupera um produto específico.|
+| `PUT/` | /products/{id}  | Atualiza um produto específico.|
+| `GET/` | /products/sellers  | Recupera todos os vendedores cadastrados.|
+| `POST/` | /products/sellers  | Insere um vendedor específico.|
+| `GET/` | /products/sellers{id}  | Recupera um vendedor específico.|
+| `PUT/` | /sellers/{id}  | Atualiza um vendedor específico.|
