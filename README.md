@@ -10,9 +10,11 @@
 
 
 ## API
-| Operação | Description |
-| ------------- | ------------------------------ |
-| `GET/api/Product/{id}`  | Recupera um produto específico.|
-| `GET /api/Product`  | Recupera todos os produtos cadastrados.|
-| `POST /api/Product`  | Insere um produto específico.|
-| `PUT /api/Product/{id}`  | Atualiza um produto específico.|
+| Operação | URL´s  | Descrição
+| ------------- | ------------------------------ | ------------------------------ |
+|  `GET/`  | /products/ | Recupera todos os produtos cadastrados.|
+| `POST/` | /products  | Insere um produto específico.|
+| `GET/`   | /products/{id}  | Recupera um produto específico.|
+| `PUT/` | /products/{id}  | Atualiza um produto específico.|
+| `POST/` | /products/sellers  | Recupera todos os vendedores cadastrados.|
+| `POST/` | /products/sellers{id}  | Recupera um vendedor específico.|
