@@ -17,7 +17,7 @@ class Product(models.Model):
     name = models.CharField(max_length=200)
     price = models.FloatField()
     stock_quantity = models.IntegerField()
-    status = models.CharField(max_length=1, choices=STATUS_PRODUCT)
+    status = models.CharField(max_length=1, default="A", choices=STATUS_PRODUCT)
     seller = models.ForeignKey(Seller, null=True, on_delete=models.SET_NULL)
 
     def to_dict(self):
