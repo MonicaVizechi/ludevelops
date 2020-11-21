@@ -8,6 +8,7 @@
 ## Objetivo
 #### O objetivo do projeto #LuDevelops é criar uma solução aberta para outros vendedores colocarem seus produtos a venda na plataforma MagazineLuiza.
 
+## API:
 
 ### API Ludevelops
 | Operação | URL´s  | Descrição
