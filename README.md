@@ -21,5 +21,9 @@
 | `GET/` | /products/sellers{id}  | Recupera um vendedor específico.|
 | `PUT/` | /sellers/{id}  | Atualiza um vendedor específico.|
 
-### API Products
+### API Product
 <img src=https://user-images.githubusercontent.com/65257909/99861415-bf436d80-2b74-11eb-9ae1-8fcdab99cf6d.png>
+
+
+### API Seller
+<img src=https://user-images.githubusercontent.com/65257909/99861564-3ed13c80-2b75-11eb-8ab0-0d75021dfc7a.png>
